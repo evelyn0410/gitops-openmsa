@@ -10,5 +10,5 @@ resources:
 - ingress.yaml
 
 images:
-- name: jei0486/backstage
+- name: jei0486/backstage-custom
   newTag: latest
