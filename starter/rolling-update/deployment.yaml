@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: starter
+  namespace: openmsa    
+  labels:
+    app: starter
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: starter
+  template:
+    metadata:
+      labels:
+        app: starter     
+    spec:
+      containers:
+        - name: starter
+          image: oscka/api-starter
+          ports:
+          - name: http
+            containerPort: 8080

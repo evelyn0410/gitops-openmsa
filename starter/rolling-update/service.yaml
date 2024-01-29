@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: starter
+  namespace: openmsa
+spec:
+  selector:
+    app: starter
+  
+  ports:
+  - protocol: TCP
+    name: http
+    port: 8080
+    targetPort: http
