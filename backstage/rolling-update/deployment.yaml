@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backstage
-          image: jei0486/backstage
+          image: jei0486/backstage-custom
           imagePullPolicy: Always
           ports:
             - name: http
