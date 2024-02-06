@@ -13,6 +13,8 @@ spec:
       labels:
         app: backstage
     spec:
+      imagePullSecrets:
+        - name: regcred
       containers:
         - name: backstage
           image: docker.openmsa.monster/backstage
